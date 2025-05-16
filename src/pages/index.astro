@@ -6,10 +6,20 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+	
+	<div class="relative">
+		<div class="flex flex-col items-center justify-center relative">
+			<img class="w-full h-full object-cover inset-shadow-[0_0_50px_rgba(255,0,0,0)]" src="openhellfiller.svg" alt="">
+			<img class="absolute inset-0 w-1/2 max-w-[50%] sm:max-w-[40%] lg:max-w-[30%] mx-auto my-auto" src="heroimage.svg" alt="">
+			<div class="flex flex-col items-center justify-center gap-2 mx-auto w-full px-8">
+				<p class="px-8 py-2 tracking-[6%] text-black font-bold text-[16px] bg-[#E3F2C4] w-full text-center">2 DAYS OF METAL ON THE WAVES</p>
+				<a class="px-8 py-2 tracking-[6%] text-[#279BA8] font-bold text-[16px] border-2 border-[#279BA8] w-full text-center" href="">GET YOUR TICKETS</a>
+				<a class="px-8 py-2 tracking-[6%] text-[#279BA8] font-bold text-[16px] border-2 border-[#279BA8] w-full text-center" href="">EXPLORE THE MUSIC</a>
+			</div>
+		</div>
+		
+	</div>
+
+	
+
 </MainLayout>

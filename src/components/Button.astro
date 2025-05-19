@@ -1,5 +1,25 @@
 ---
+const { title, href } = Astro.props;
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
+
+<div class="inline-block">
+  <a
+    class="font-opensans font-black border rounded-[4px] border-2 border-[#E3F2C4] text-[#E3F2C4] py-1 px-2 
+           hover:text-[#279BA8] hover:border-[#279BA8] transition-colors duration-300 flex items-center justify-center relative overflow-hidden text-sm w-auto h-auto group"
+    href={href}
+  >
+    <span class="relative z-10">BUY TICKETS</span>
+    <img
+      src="reefbutton.svg"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-300 group-hover:opacity-0"
+      aria-hidden="true"
+    />
+    <img
+      src="reefbuttonhover.svg"
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+      aria-hidden="true"
+    />
+  </a>
 </div>

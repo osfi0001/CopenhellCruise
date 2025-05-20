@@ -1,6 +1,73 @@
 ---
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+<section class="mt-20 relative overflow-hidden">
+    <!-- Background Image -->
+    <img 
+        src="reeffooter.svg" 
+        alt="" 
+        class="absolute bottom-0 left-0 w-full z-0 pointer-events-none"
+        style="object-fit: cover;"
+    />
+
+    <!-- Centered Footer Hero Image -->
+    <div class="flex justify-center md:justify-center">
+        <img 
+            src="footerhero.svg" 
+            alt="footer he"
+            class="mx-auto mb-4 md:mb-8 w-auto max-w-xs md:max-w-md"
+        >
+    </div>
+
+    <div class="flex flex-col items-center justify-center relative z-10 ">
+        <div class="w-full flex flex-col md:flex-row md:items-center md:justify-center">
+            <!-- Social Media Section (center) -->
+            <div class="flex flex-col items-center">
+                <div class="grid grid-cols-3 gap-x-5 gap-y-0 items-center">
+                    <a href="#" class="hover:scale-110 transition-transform duration-200">
+                        <img src="instagram.svg" alt="instagram" class="w-10 h-10" />
+                    </a>
+                    <a href="#" class="hover:scale-110 transition-transform duration-200">
+                        <img src="facebook.svg" alt="facebook" class="w-10 h-10" />
+                    </a>
+                    <a href="#" class="hover:scale-110 transition-transform duration-200">
+                        <img src="tiktok.svg" alt="tiktok" class="w-10 h-10" />
+                    </a>
+                </div>
+                <!-- All Links (desktop only, below social media) -->
+                <ul class="hidden md:flex flex-row gap-8 mt-6 font-heebo text-[#E3F2C4] text-[32px] font-bold justify-center">
+                    <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">VOLUNTEER</a></li>
+                    <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">CONTACT US</a></li>
+                    <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">NEWS</a></li>
+                    <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">TICKETS</a></li>
+                    <li>
+                        <a href="" class="hover:text-[#279BA8] transition-colors duration-300 block text-center">
+                            TERMS & CONDITIONS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- All Links (mobile) -->
+        <ul class="md:hidden mx-5 font-heebo text-[#E3F2C4] text-[32px] font-bold mt-5">
+            <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">VOLUNTEER</a></li>
+            <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">CONTACT US</a></li>
+            <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">NEWS</a></li>
+            <li><a href="" class="hover:text-[#279BA8] transition-colors duration-300">TICKETS</a></li>
+            <li>
+                <a href="" class="hover:text-[#279BA8] transition-colors duration-300 block text-center">
+                    TERMS & CONDITIONS
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Partners-->
+    <div class="flex justify-between mx-8 relative z-10 mb-5">
+        <div class="flex justify-start">
+            <img src="monster.svg" alt="Monster">
+        </div>
+        <div class="flex justify-end">
+            <img src="tuborg.svg" alt="Tuborg">
+        </div>
+    </div>
+</section>

@@ -1,0 +1,32 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+<MainLayout>
+<div class="md:grid md:grid-cols-2">
+    <!-- Left Column: Images -->
+    <div class="relative flex flex-col items-center justify-center w-full h-full object-cover z-0">
+        <img class="absolute top-0 left-0 w-full h-80% object-cover z-1 md:h-full" src="crdesk.svg" alt="">
+        <img class="relative w-3/4 max-w-lg mx-auto z-2 md:w-full md:max-w-none" src="crlogo.svg" alt="">
+    </div>
+    
+    <!-- Right Column: Text and Other Content -->
+    <div class="z-10 relative flex flex-col justify-between">
+        <div class="mx-8 mb-8">
+            <h1 class="font-regular font-pirata text-[96px] text-[#E3F2C4] z-20 relative">CASTLE RAT</h1>
+            <p class="font-regular font-heebo text-[16px] text-[#E3F2C4] tracking-[6%]">Brooklyn-bandet CASTLE RAT spiller doom metal, der er gennemsyret af fantasystemning. Riley Pinkerton, The Rat Queen, er draget ud for at udvide og forsvare riget mod deres ærkenemesis, The Rat Reaperess – og det gør hun i selskab med The Count, The Plague Doctor og The Druid. Herlig musik for alle fans af både klassisk fantasy og metal, lige fra Frazetta til Sabbath!</p>
+        </div>
+        <div class="flex gap-5 items-center md:items-start justify-center md:justify-items-start">
+            <a href=""><img src="instayellow.svg" alt="instagram"></a>
+            <a href=""><img src="faceyellow.svg" alt="facebook"></a>
+            <a href=""><img src="tikyellow.svg" alt="tiktok"></a>
+        </div>
+        <!-- Spotify -->
+        <div class="flex items-center justify-center">
+            <iframe class="m-8 w-full h-100 md:h-180" style="border-radius:12px" src="https://open.spotify.com/embed/artist/2g5gjeZJLGcWPAF0o9KdJj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+</MainLayout>
+
+

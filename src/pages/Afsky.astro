@@ -3,20 +3,28 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 ---
 <MainLayout>
-<div class="relative flex flex-col items-center justify-center w-screen h-screen object-cover">
-    <img class="absolute top-0 left-0 w-full h-80% object-cover" src="afskymobile.svg" alt="">
-    <img class="relative w-3/4 max-w-lg mx-auto" src="afsky.svg" alt="">
-</div>
-
-<div class="m-8">
-    <h1 class="font-regular text-[96px] text-[#E3F2C4]">AFSKY</h1>
-    <p class="font-regular text-[16px] text-[#E3F2C4] tracking-[6%]">AFSKY er med rødder dybt plantet i 90’ernes black  metal-tradition og grene, der strækker sig mod både folkemusik og mørk  poesi, en smuk forening af det brutale og det melankolske. Musikken er  lige dele atmosfærisk og nådesløs. Skrig, spoken word og melodisk tyngde blandes i en klagesang – et råb fra den indre afgrund – der giver  genlyd langt ud over genrens grænser.</p>
-</div>
-<div>
-    <a href=""><img src="" alt=""></a>
-</div>
-
-<div class="flex items-center justify-center">
-    <iframe class="m-8 w-full" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1djxnRn6jJcQtVGJ4lTDvP?utm_source=generator"  height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div class="md:grid md:grid-cols-2">
+    <!-- Left Column: Images -->
+    <div class="relative flex flex-col items-center justify-center w-full h-full object-cover z-0">
+        <img class="absolute top-0 left-0 w-full h-80% object-cover z-1 md:h-full" src="afskydesk.svg" alt="">
+        <img class="relative w-3/4 max-w-lg mx-auto z-2 md:w-full md:max-w-none" src="afsky.svg" alt="">
+    </div>
+    
+    <!-- Right Column: Text and Other Content -->
+    <div class="z-10 relative flex flex-col justify-between">
+        <div class="mx-8 mb-8">
+            <h1 class="font-regular font-pirata text-[96px] text-[#E3F2C4] z-20 relative">AFSKY</h1>
+            <p class="font-regular font-heebo text-[16px] text-[#E3F2C4] tracking-[6%]">AFSKY er med rødder dybt plantet i 90’ernes black  metal-tradition og grene, der strækker sig mod både folkemusik og mørk  poesi, en smuk forening af det brutale og det melankolske. Musikken er  lige dele atmosfærisk og nådesløs. Skrig, spoken word og melodisk tyngde blandes i en klagesang – et råb fra den indre afgrund – der giver  genlyd langt ud over genrens grænser.</p>
+        </div>
+        <div class="flex gap-5 items-center md:items-start justify-center md:justify-items-start">
+            <a href=""><img src="instayellow.svg" alt="instagram"></a>
+            <a href=""><img src="faceyellow.svg" alt="facebook"></a>
+            <a href=""><img src="tikyellow.svg" alt="tiktok"></a>
+        </div>
+        <!-- Spotify -->
+        <div class="flex items-center justify-center">
+            <iframe class="m-8 w-full h-100 md:h-180" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1djxnRn6jJcQtVGJ4lTDvP?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
 </div>
 </MainLayout>

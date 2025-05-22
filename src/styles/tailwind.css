@@ -1,15 +1,21 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap");
 
-@plugin '@tailwindcss/typography';
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
 @plugin '@tailwindcss/forms';
 
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, forest;
 }
 
-
 @theme {
   /* Her tilføjes theme variable // tokens */
+  --font-heebo: "Heebo", sans-serif;
+  --font-pirata: "Pirata One", cursive;
+  --font-grenze: "Grenze Gotisch", cursive;
 }
 
 @layer base {
@@ -22,9 +28,7 @@
   }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
 }

@@ -1,0 +1,74 @@
+---
+---
+<style>
+.marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    line-height: 0;
+}
+
+.marquee__inner {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    transition: transform 0.1s linear;
+}
+
+.marquee__img {
+    display: block;
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive: smaller on mobile */
+@media (max-width: 600px) {
+    .marquee {
+        height: 60px;
+    }
+    .marquee__img {
+        height: 60px;
+    }
+}
+</style>
+
+<div class="marquee">
+    <div class="marquee__inner" id="marqueeInner">
+        <img src="waves.svg" alt="waves" class="marquee__img" draggable="false" />
+        <img src="waves.svg" alt="waves" class="marquee__img" draggable="false" />
+        <img src="waves.svg" alt="waves" class="marquee__img" draggable="false" />
+        <img src="waves.svg" alt="waves" class="marquee__img" draggable="false" />
+    </div>
+</div>
+
+<script is:inline>
+const marquee = document.getElementById('marqueeInner');
+let lastScrollY = window.scrollY;
+let offset = 0;
+let ticking = false;
+const speed = 0.5; // Adjust for sensitivity
+
+function onScroll() {
+    const currentScrollY = window.scrollY;
+    const delta = currentScrollY - lastScrollY;
+    offset += delta * speed;
+    // Loop the offset for seamless effect
+    const totalWidth = marquee.scrollWidth / 2;
+    offset = ((offset % totalWidth) + totalWidth) % totalWidth;
+    marquee.style.transform = `translateX(${-offset}px)`;
+    lastScrollY = currentScrollY;
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+    }
+});
+</script>

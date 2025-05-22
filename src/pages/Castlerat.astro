@@ -6,8 +6,10 @@ import MainLayout from "../layouts/MainLayout.astro";
 <div class="md:grid md:grid-cols-2">
     <!-- Left Column: Images -->
     <div class="relative flex flex-col items-center justify-center w-full h-full object-cover z-0">
-        <img class="absolute top-0 left-0 w-full h-80% object-cover z-1 md:h-full" src="crdesk.svg" alt="">
-        <img class="relative w-3/4 max-w-lg mx-auto z-2 md:w-full md:max-w-none" src="crlogo.svg" alt="">
+        <img class="w-full h-80% object-cover z-0 md:h-full" src="crdesk.svg" alt="">
+        <div class="absolute flex items-center justify-center w-full h-full top-0 left-0">
+            <img class="w-3/4 max-w-lg mx-auto md:w-full md:max-w-none z-10" src="crlogo.svg" alt="">
+        </div>
     </div>
     
     <!-- Right Column: Text and Other Content -->
@@ -17,9 +19,9 @@ import MainLayout from "../layouts/MainLayout.astro";
             <p class="font-regular font-heebo text-[16px] text-[#E3F2C4] tracking-[6%]">Brooklyn-bandet CASTLE RAT spiller doom metal, der er gennemsyret af fantasystemning. Riley Pinkerton, The Rat Queen, er draget ud for at udvide og forsvare riget mod deres ærkenemesis, The Rat Reaperess – og det gør hun i selskab med The Count, The Plague Doctor og The Druid. Herlig musik for alle fans af både klassisk fantasy og metal, lige fra Frazetta til Sabbath!</p>
         </div>
         <div class="flex gap-5 items-center md:items-start justify-center md:justify-items-start">
-            <a href=""><img src="instayellow.svg" alt="instagram"></a>
-            <a href=""><img src="faceyellow.svg" alt="facebook"></a>
-            <a href=""><img src="tikyellow.svg" alt="tiktok"></a>
+            <a class="hover:scale-110 transition-transform duration-200" href=""><img src="instayellow.svg" alt="instagram"></a>
+            <a class="hover:scale-110 transition-transform duration-200" href=""><img src="faceyellow.svg" alt="facebook"></a>
+            <a class="hover:scale-110 transition-transform duration-200" href=""><img src="tikyellow.svg" alt="tiktok"></a>
         </div>
         <!-- Spotify -->
         <div class="flex items-center justify-center">

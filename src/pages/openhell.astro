@@ -1,0 +1,30 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+<MainLayout>
+<div class="md:grid md:grid-cols-2">
+    <!-- Left Column: Images -->
+    <div class="relative flex flex-col items-center justify-center w-full h-full object-cover z-0">
+        <img class="absolute top-0 left-0 w-full h-80% object-cover z-1 md:h-full" src="openhelldesk.svg" alt="">
+        <img class="relative w-3/4 max-w-lg mx-auto z-2 md:w-full md:max-w-none" src="openhelllogo.svg" alt="">
+    </div>
+    
+    <!-- Right Column: Text and Other Content -->
+    <div class="z-10 relative flex flex-col justify-between">
+        <div class="mx-8 mb-8">
+            <h1 class="font-regular font-pirata text-[96px] text-[#E3F2C4] z-20 relative">OPENHELL</h1>
+            <p class="font-regular font-heebo text-[16px] text-[#E3F2C4] tracking-[6%]">OPENHELL er hvert år et af de faste hovednavne i COPENHELLs Biergarten-telt, som er kendt og berygtet for legendarisk vilde fester. Bandet tager hvert år Oslo-båden med storm med deres fænomenale live-metalkaraoke, og de giver igen i år publikum mulighed for at udleve drømmen om at blive rockstjerne! </p>
+        </div>
+        <div class="flex gap-5 items-center md:items-start justify-center md:justify-items-start">
+            <a href=""><img src="instayellow.svg" alt="instagram"></a>
+            <a href=""><img src="faceyellow.svg" alt="facebook"></a>
+            <a href=""><img src="tikyellow.svg" alt="tiktok"></a>
+        </div>
+        <!-- Spotify -->
+        <div class="flex items-center justify-center">
+            <iframe class="m-8 w-full h-100 md:h-180" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4dINc6x680wry55ssZyJwp?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+</MainLayout>

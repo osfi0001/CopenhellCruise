@@ -4,7 +4,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Dynamicwaves from '../components/Dynamicwaves.astro';
 import Artist from "../components/Artist.astro";
 import Form from "../components/Form.astro";
-
+import Cruise from '../components/cruise.astro';
 ---
 <MainLayout title="Titel">
 
@@ -35,10 +35,22 @@ import Form from "../components/Form.astro";
 	<div id="artistsection">
 	<Artist></Artist>
 </div>
+<div class="mx-12 md:mx-50 my-12 md:my-16 font-heebo text-[#E3F2C4] text-[16px] md:text-[24px]">
+	<p class="mb-7">
+		Du kan se frem til to dage til havs fyldt med blændende koncerter,  lækker mad, en helvedes masse underholdning og ikke mindst masser af dejlig COPENHELL-stemning. 
+	</p>
+	<p class="mb-7">Ud over rock- og metalkoncerter kan du besøge den bedste flydende  bodega, Den Synkende Skude, få et permanent minde med hjem hos vores  søstærke tatovører, deltage i fællessang med vores syngende sømænd, forsøge at slippe ud af et escape room, pleje tømmermændene i vores  brætspilsalon og meget mere!</p>
+	<p class="mb-7">COPENHELL overtager som sædvanlig hele skibet, så der udelukkende er sande rock- og metalfans om bord. Ses vi?</p>
+</div>
 
+<div>
+	<Cruise></Cruise>
+</div>
 <div>
 	<Form></Form>
 </div>
+
+<img src="barbedwire.svg" alt="divider">
 </MainLayout> 
 
 <script>

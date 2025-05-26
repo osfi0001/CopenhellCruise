@@ -1,0 +1,20 @@
+---
+---
+
+<section>
+    <div>
+    <img class="parallaxgrafik1 col-start-2" src="barbedwire.svg" alt="wire">
+    <img class="parallaxgrafik2 col-start-5" src="barbedwire.svg" alt="wire">
+</div>
+</section>
+
+<script>
+import { animate, stagger, inView, scroll } from "motion";
+
+    	scroll(animate(".parallaxgrafik1", { y: [400, -600] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik2", { x:[-100, 100], y: [800, -1800] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+</script>

@@ -56,9 +56,10 @@
             })
         })
         window.addEventListener("click", function (e) {
-            if (!e.target.matches(".dropdown-toggle")) {
+            const target = e.target as Element;
+            if (!target.matches(".dropdown-toggle")) {
                 document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-                    if (!menu.contains(e.target)) {
+                    if (!menu.contains(target)) {
                         menu.classList.add("hidden")
                     }
                 })

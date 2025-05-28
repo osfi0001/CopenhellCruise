@@ -15,20 +15,14 @@ import Parallaxwire from '../components/Parallaxwire.astro';
 		src="heroimage.svg" 
 		alt=""
 	>
-	<!-- Move links down so they don't overlap heroimage.svg -->
-	<div class="flex flex-col items-center justify-center gap-2 mx-auto w-full px-4 md:px-25 absolute left-1/2 -translate-x-1/2 z-10 md:mt-10"
-		style="top: min(48vw, 400px);">
+	<!-- Menu is now positioned directly below the openhell filler image -->
+	<div class="flex flex-col items-center justify-center gap-2 mx-auto w-full px-4 md:px-25 mt-6 md:mt-10 z-10">
 		<p class="px-4 md:px-8 py-2 tracking-[6%] text-black font-bold text-[16px] md:text-[32px] bg-[#E3F2C4] w-full text-center">2 DAYS OF METAL ON THE WAVES</p>
 		<a class="px-4 md:px-8 py-2 tracking-[6%] text-[#279BA8] font-bold text-[16px] md:text-[32px] border-2 border-[#279BA8] w-full text-center hover:bg-[#279BA8] hover:text-black duration-300" href="/tickets">GET YOUR TICKETS</a>
 		<a class="px-4 md:px-8 py-2 tracking-[6%] text-[#279BA8] font-bold text-[16px] md:text-[32px] border-2 border-[#279BA8] w-full text-center hover:bg-[#279BA8] hover:text-black duration-300" href="">EXPLORE THE MUSIC</a>
 	</div>
 </div>
 
-<!-- Spacer for mobile to prevent overlap -->
-<div class="block md:hidden" style="height: min(10vw, 440px);"></div>
-
-<div class="mt-5 mb-5">
-</div>
 
 <div class="flex items-center justify-center mx-4 md:mx-50 my-12 md:my-16">
 	<img class="hidden lg:block" src="bone1.svg" alt="">
